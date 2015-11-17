@@ -16,15 +16,15 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Catalyst::Plugin::URI",
   "PREREQ_PM" => {
-    "Catalyst" => "5.90060",
     "Moo" => "2.000002",
-    "Scalar::List::Utils" => "1.42"
+    "Scalar::Util" => 0
   },
   "TEST_REQUIRES" => {
+    "Catalyst" => "5.90060",
     "HTTP::Request::Common" => 0,
     "Test::Most" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -35,7 +35,7 @@ my %FallbackPrereqs = (
   "Catalyst" => "5.90060",
   "HTTP::Request::Common" => 0,
   "Moo" => "2.000002",
-  "Scalar::List::Utils" => "1.42",
+  "Scalar::Util" => 0,
   "Test::Most" => 0
 );
 
